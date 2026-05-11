@@ -25,7 +25,7 @@
     "./adapters/dev": "./dist/adapters/dev.mjs",
     "./adapters/embedded": "./dist/adapters/embedded.mjs",
     "./adapters/mcp": "./dist/adapters/mcp.mjs",
-    "./adapters/vite": "./dist/adapters/vite.mjs",
+    "./helpers/vite": "./dist/helpers/vite.mjs",
     "./client": "./dist/client/index.mjs",
     "./constants": "./dist/constants.mjs",
     "./node": "./dist/node/index.mjs",

@@ -130,30 +130,3 @@ export interface DevframeDefinition {
 export function defineDevframe(d: DevframeDefinition): DevframeDefinition {
   return d
 }
-
-// --- Deprecated aliases (backward compatibility) ---
-
-/** @deprecated Use `DevframeRuntime`. */
-export type DevtoolRuntime = DevframeRuntime
-/** @deprecated Use `DevframeDeploymentKind`. */
-export type DevtoolDeploymentKind = DevframeDeploymentKind
-/** @deprecated Use `DevframeCliOptions`. */
-export type DevtoolCliOptions = DevframeCliOptions
-/** @deprecated Use `DevframeSpaOptions`. */
-export type DevtoolSpaOptions = DevframeSpaOptions
-/** @deprecated Use `DevframeBrowserContext`. */
-export type DevtoolBrowserContext = DevframeBrowserContext
-/** @deprecated Use `DevframeSetupInfo`. */
-export type DevtoolSetupInfo = DevframeSetupInfo
-/** @deprecated Use `DevframeDefinition`. */
-export type DevtoolDefinition = DevframeDefinition
-
-let warnedDefineDevtool = false
-/** @deprecated Use `defineDevframe`. */
-export function defineDevtool(d: DevframeDefinition): DevframeDefinition {
-  if (!warnedDefineDevtool) {
-    warnedDefineDevtool = true
-    console.warn('[devframe] `defineDevtool` is deprecated; use `defineDevframe` instead.')
-  }
-  return d
-}

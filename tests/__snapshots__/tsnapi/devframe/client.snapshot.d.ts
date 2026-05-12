@@ -57,7 +57,6 @@ export type DevToolsRpcClientCallOptional = BirpcReturn<DevToolsRpcServerFunctio
 // #endregion
 
 // #region Functions
-export declare function connectDevtool(..._: Parameters<typeof getDevToolsRpcClient>): ReturnType<typeof getDevToolsRpcClient>;
 export declare function createRpcStreamingClientHost(_: DevToolsRpcClient): RpcStreamingClientHost;
 export declare function getDevToolsRpcClient(_?: DevToolsRpcClientOptions): Promise<DevToolsRpcClient>;
 // #endregion

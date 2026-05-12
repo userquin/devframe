@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://devfra.me/" target="_blank" rel="noopener noreferrer">
-    <img src="https://raw.githubusercontent.com/devframes/devframe/main/docs/public/logo.svg" width="140" alt="Devframe" />
+    <img src="https://raw.githubusercontent.com/devframes/devframe/refs/heads/main/docs/public/logo.svg" width="140" alt="Devframe" />
   </a>
 </p>
 

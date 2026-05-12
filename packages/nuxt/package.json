@@ -29,7 +29,8 @@
   ],
   "scripts": {
     "build": "tsdown",
-    "watch": "tsdown --watch"
+    "watch": "tsdown --watch",
+    "prepack": "pnpm run build"
   },
   "peerDependencies": {
     "@nuxt/kit": "^3.0.0 || ^4.0.0",

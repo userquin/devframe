@@ -3,5 +3,4 @@
  */
 // #region Functions
 export function defineDevframe(_) {}
-export function defineDevtool(_) {}
 // #endregion

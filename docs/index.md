@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Devframe
   text: Framework-neutral foundation for DevTools
-  tagline: One devframe definition. Seven adapters. RPC, hosts, shared state, and agent-native — independent of Vite and any UI framework.
+  tagline: One devframe definition, adapters to different environments. Managed communication layer, agent-native.
   image:
     src: /logo.svg
     alt: Devframe
@@ -19,7 +19,7 @@ hero:
 
 features:
   - icon: 🧱
-    title: One Definition, Many Deployments
+    title: One Definition, Many Adapters
     details: A single `defineDevframe` call deploys to CLI, static build, SPA, Vite plugin, embedded overlay, kit host, or MCP server.
     link: /guide/devframe-definition
   - icon: 🔌
@@ -34,12 +34,8 @@ features:
     title: Streaming Channels
     details: One-way RPC streams and two-way upload channels for long-running data, progress reporting, and live feeds.
     link: /guide/streaming
-  - icon: 🎨
-    title: Bring Your Own UX
-    details: Hooks like `onReady` and `cli.configure` let your app own banners, logging, and styling while Devframe owns the plumbing.
-    link: /guide/
   - icon: 🤖
-    title: Agent-Native (experimental)
+    title: Agent-Native
     details: Surface RPC functions, tools, and resources to coding agents over MCP with a single `agent` field on each function.
     link: /guide/agent-native
 ---

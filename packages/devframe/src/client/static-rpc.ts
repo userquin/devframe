@@ -1,3 +1,5 @@
+import type { RpcDumpRecordError } from '../rpc/types'
+import { reviveDumpError } from '../rpc/dump-error'
 import { hash } from '../utils/hash'
 import { structuredCloneDeserialize } from '../utils/structured-clone'
 
@@ -28,10 +30,7 @@ export type StaticRpcManifest = Record<string, StaticRpcManifestEntry>
 export interface StaticRpcRecord {
   inputs?: any[]
   output?: any
-  error?: {
-    message: string
-    name: string
-  }
+  error?: RpcDumpRecordError
 }
 
 function isStaticEntry(value: unknown): value is StaticRpcManifestStaticEntry {
@@ -56,11 +55,8 @@ function isRecord(value: unknown): value is StaticRpcRecord {
 }
 
 function resolveRecordOutput(record: StaticRpcRecord): any {
-  if (record.error) {
-    const error = new Error(record.error.message)
-    error.name = record.error.name
-    throw error
-  }
+  if (record.error)
+    throw reviveDumpError(record.error)
   return record.output
 }
 
